@@ -1,0 +1,50 @@
+// breakpoints
+$breakpoints: (
+	xs: 0,
+	// <= 576 mobiles
+	sm: 576,
+	// <= 768 tables
+	md: 768,
+	// <= 992 small screens
+	lg: 992,
+	// <= 1200 large screens
+	xl: 1200,
+	// <= 1400 extra large screens
+	xxl: 1400,
+	// >= 1400 extra extra large screens
+);
+
+// colors
+$colors: (
+	primary: #880e4f,
+	primary_light: #bc477b,
+	primary_dark: #560027,
+	secondary: #f44336,
+	secondary_light: #ff7961,
+	secondary_dark: #ba000d,
+	text_primary: #fff,
+	text_secondary: #000,
+	tertiary: #106ebe,
+	danger: #9b0802,
+	success: #056d6e,
+	dark: #333,
+	neutral: #bcbcbc,
+	light: #ddd,
+	white: #fff,
+	black: #000,
+);
+
+// fonts family
+$fontFamily: 'Roboto', sans-serif;
+
+// fonts size
+$fontSize: (
+	bodyText: 16px,
+	h1: 1.375rem,
+	h2: 1.325rem,
+	h3: 1.3rem,
+	h4: 1.275rem,
+	h5: 1.25rem,
+	h6: 1rem,
+);
+

@@ -1,0 +1,39 @@
+@import './normalize';
+@import './variables';
+@import './mixins';
+
+html {
+	background: map-get($map: $colors, $key: primary);
+	font-family: $fontFamily;
+	font-size: map-get($map: $fontSize, $key: bodyText);
+}
+
+h1,
+.h1 {
+	@include heading('h1');
+}
+
+h2,
+.h2 {
+	@include heading('h2');
+}
+
+h3,
+.h3 {
+	@include heading('h3');
+}
+
+h4,
+.h4 {
+	@include heading('h4');
+}
+
+h5,
+.h5 {
+	@include heading('h5');
+}
+
+h6,
+.h6 {
+	@include heading('h6');
+}

@@ -1,0 +1,33 @@
+@import '../variables';
+
+// media breakpoints
+@mixin media-device-table() {
+	@media screen and (min-width: #{map-get($breakpoints, "sm")}px) {
+		@content;
+	}
+}
+
+@mixin media-device-screen() {
+	@media screen and (min-width: #{map-get($breakpoints, "md")}px) {
+		@content;
+	}
+}
+
+@mixin media-device-large-screen() {
+	@media screen and (min-width: #{map-get($breakpoints, "lg")}px) {
+		@content;
+	}
+}
+
+@mixin media-device-extra-large-screen() {
+	@media screen and (min-width: #{map-get($breakpoints, "xl")}px) {
+		@content;
+	}
+}
+
+@mixin media-device-big-screen() {
+	@media screen and (min-width: #{map-get($breakpoints, "xxl")}px) {
+		@content;
+	}
+}
+

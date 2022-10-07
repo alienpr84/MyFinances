@@ -1,0 +1,21 @@
+@import '../variables';
+
+@mixin heading($type) {
+	@if $type == 'h1' {
+		font-size: map-get($map: $fontSize, $key: h1);
+	} @else if $type == 'h2' {
+		font-size: map-get($map: $fontSize, $key: h2);
+	} @else if $type == 'h3' {
+		font-size: map-get($map: $fontSize, $key: h3);
+	} @else if $type == 'h4' {
+		font-size: map-get($map: $fontSize, $key: h4);
+	} @else if $type == 'h5' {
+		font-size: map-get($map: $fontSize, $key: h5);
+	} @else if $type == 'h6' {
+		font-size: map-get($map: $fontSize, $key: h6);
+	}
+
+	font-family: $fontFamily;
+	font-weight: 500;
+	line-height: 1.2;
+}
