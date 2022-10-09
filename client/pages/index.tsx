@@ -1,13 +1,9 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
+import type { NextPage } from 'next';
+import { useAdminLayoutState } from '../context/AdminLayout';
+import { withAdminLayout } from '../layouts/AdminLayout/Layout';
 
 const Home: NextPage = () => {
-  return (
-    <h1>
-     Hello nextjs
-    </h1>
-  )
-}
+	return <h1>Home page</h1>;
+};
 
-export default Home
+export default withAdminLayout(Home);

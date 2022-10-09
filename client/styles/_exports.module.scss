@@ -1,0 +1,12 @@
+@import './variables.scss';
+
+:export {
+	// colors
+	primaryColor: map-get($map: $colors, $key: primary);
+	primaryDarkColor: map-get($map: $colors, $key: primary_dark);
+	lightColor: map-get($colors, 'light');
+	neutralColor: map-get($map: $colors, $key: neutral);
+
+	// breakpoints
+	mdBreakpoint: map-get($map: $breakpoints, $key: md);
+}
